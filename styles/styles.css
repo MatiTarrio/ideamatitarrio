@@ -1,0 +1,232 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    padding: 0.5em 1em;
+}
+
+.header__titulo {
+    text-align: flex-start;
+    color: #b40d0d
+}
+
+.header__titulo:hover {
+    text-align: flex-start;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    background-color: #000000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    padding: 0 .5em;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    color: #b40d0d;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #b40d0d;
+}
+
+
+@font-face {
+    font-family: 'Didact Gothic', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap);
+}
+
+.titles {
+    color: #b40d0d
+}
+
+span {
+    color: #ffffff
+}
+
+span:hover {
+    color: #b40d0d
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    display: flex;
+    font-size: 18px;
+    font-size: 1.3em;
+    color: #ffffff
+}
+
+
+
+.redes>a {
+    padding: 0 1em;
+}
+
+.div__me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 3em;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.merch-title {
+    color: #b40d0d;
+    align-items: center
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main tour"
+        "main merch"
+        "footer footer";
+    row-gap: 0.1em;
+    padding: 0 1.5em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: #b40d0d;
+    align-items: center;
+    grid-area: footer
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+.main-images {
+    object-fit: contain;
+    width: 100%;
+}
+
+.grid-merch {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "shop"
+        "table"
+        "footer";
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.talles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.talles table,
+th,
+td {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #b40d0d;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    color: #b40d0d;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "tour"
+            "merch"
+            "footer";
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    main {
+        display: flex;
+        align-items: flex-start;
+        max-width: 100%;
+        max-height: 100%;
+        grid-area: main;
+    }
+
+    .navbar ul {
+        display: flex;
+        grid-area: header;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .merch {
+        text-align: center;
+    }
+}
