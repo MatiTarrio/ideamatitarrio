@@ -156,6 +156,16 @@ aside {
     flex-direction: column;
 }
 
+.product-img {
+    border-radius: 20%;
+    text-align: center;
+    transition: transform .4s;
+}
+
+.product-img:hover {
+    transform: scale(1.5);
+}
+
 .talles {
     display: flex;
     justify-content: center;
