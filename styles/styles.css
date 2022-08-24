@@ -10,7 +10,8 @@ body {
 
 .header__titulo {
     text-align: flex-start;
-    color: #b40d0d
+    color: #b40d0d;
+    transition: color 0.5s ease-in-out;
 }
 
 .header__titulo:hover {
@@ -55,7 +56,8 @@ body {
 }
 
 span {
-    color: #ffffff
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
 }
 
 span:hover {
@@ -129,12 +131,13 @@ footer {
 
 aside {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .main-images {
     object-fit: contain;
     width: 100%;
+    border-radius: 1em;
 }
 
 .grid-merch {
@@ -184,6 +187,20 @@ td {
     flex-direction: column;
     font-size: 25px;
     color: #b40d0d;
+}
+
+.tour-image {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.tour-image img {
+    transition: all .9s ease-in-out;
+    vertical-align: middle;
+}
+
+.tour-image img:hover {
+    transform: scale(1.5);
 }
 
 @media screen and (max-width: 480px) {
