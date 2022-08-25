@@ -10,7 +10,7 @@ body {
 
 .header__titulo {
     text-align: flex-start;
-    color: #b40d0d;
+    color: #000000;
     transition: color 0.5s ease-in-out;
 }
 
