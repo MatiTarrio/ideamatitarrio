@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="styleseet" href="../styles/reset.css">
@@ -14,44 +16,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container">
-        <section class="grid-merch">
-            <header>
-                <a href="https://www.youtube.com/watch?v=ICngCwCFuYw" target="_blank" class=header__titulo>
-                    <h1> Post Malone</h1>
-                </a>
-                <nav class="navbar">
-                    <ul>
-                        <li>
-                            <a href="../index.html">I<span>nicio</span></a>
-                        </li>
-                        <li>
-                            <a href="../pages/aboutme.html">A<span>bout me</span></a>
-                        </li>
-                        <li>
-                            <a href="../pages/tour.html">T<span>our</span></a>
-                        </li>
-                        <li>
-                            <a href="../pages/merch.html">M<span>erch</span></a>
-                        </li>
-                        <li>
-                            <a href="../pages/contacto.html">C<span>ontacto</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.postmalone.com/" target="_blank">Ir a website oficial</a>
-                        </li>
-                    </ul>
-                </nav>
+<section class="container">
 
-            </header>
+    <body>
+        <section class="grid-merch">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black d-flex">
+                <div class="container-fluid">
+                    <a class="navbar-brand">Post Malone</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../index.html"><span>Inicio</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/aboutme.html">A<span>bout me</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/tour.html">T<span>our</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/merch.html">M<span>erch</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">C<span>ontacto</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.postmalone.com/" target="_blank"><span>Ir a
+                                        website
+                                        oficial</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
             <div class="merch">
                 <h1 div="merch-title">P<span>roductos</span></h1>
                 <article class="product-list">
                     <div class="product">
-                        <h2 class="titles">Box set Twelve Carat+T-shirt+CD</h2>
-                        <h2>$9.000</h2>
+                        <h3 class="titles">Box set Twelve Carat+T-shirt+CD</h3>
+                        <h4>$9.000</h4>
 
                         <label>Selecciona tu talle</label>
 
@@ -64,12 +73,14 @@
                             <option>2XL</option>
                         </select>
 
-                        <img class="product-img" src="https://store-postmalone.com/wp-content/uploads/2022/06/post-box-set.png"
-                            width="500px" height="500px">
+
+                        <img src="https://store-postmalone.com/wp-content/uploads/2022/06/post-box-set.png"
+                            width="400px" height="400px">
+
                     </div>
                     <div class="product">
-                        <h2 class="titles">Twelve Carat Toothache T-shirt</h2>
-                        <h2>$5.000</h2>
+                        <h3 class="titles">Twelve Carat Toothache T-shirt</h3>
+                        <h4>$5.000</h4>
 
                         <label>Selecciona tu talle</label>
 
@@ -81,12 +92,14 @@
                             <option>XL</option>
                             <option>2XL</option>
                         </select>
-                        <img class="product-img" src="https://cdn.shopify.com/s/files/1/0293/0514/3340/products/PHM-TEE_1200x1200.png?v=1653680942"
-                            width="500px" height="500px">
+
+                        <img src="https://cdn.shopify.com/s/files/1/0293/0514/3340/products/PHM-TEE_1200x1200.png?v=1653680942"
+                            width="400px" height="400px">
+
                     </div>
                     <div class="product">
-                        <h2 class="titles">ASCII Butterfly Knife Black Hoodie</h2>
-                        <h2>$12.000</h2>
+                        <h3 class="titles">ASCII Butterfly Knife Black Hoodie</h3>
+                        <h4>$14.000</h4>
                         <label>Selecciona tu talle</label>
                         <select>
                             <option>XS</option>
@@ -96,14 +109,15 @@
                             <option>XL</option>
                             <option>2XL</option>
                         </select>
-                        <img class="product-img" src="https://cdn.shopify.com/s/files/1/0293/0514/3340/products/knife-hood_1200x1200.png?v=1654300548"
-                            width="500px" height="500px">
+
+                        <img src="https://i0.wp.com/store-postmalone.com/wp-content/uploads/2022/06/knife-hood-1.png?fit=1200%2C1200&ssl=1"
+                            width="400px" height="400px">
                     </div>
                 </article>
 
                 <div class="talles">
-                    <h2>Tabla de talles</h2>
-                    <table>
+                    <h3>Tabla de talles</h3>
+                    <table class="table-light">
                         <tr>
                             <th>Talle</th>
                             <th>Ancho</th>
@@ -149,25 +163,30 @@
                         </tr>
                     </table>
                 </div>
-                <footer>
-                    <div class="redes">
-                        <a href="https://www.facebook.com/postmalone" target="_blank"><img
-                                src="../images/facebook.png"></a>
-                        <a href="https://www.instagram.com/postmalone/" target="_blank"><img
-                                src="../images/instagram.png"></a>
-                        <a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60" target="_blank"><img
-                                src="../images/spotify.png"></a>
-                        <a href="https://www.tiktok.com/@postmalone?lang=es" target="_blank"><img
-                                src="../images/tik-tok.png"></a>
-                    </div>
 
-                    <div>
-                        <h3>Desarollo Mati Tarrio - Argentina Julio 2022. Todos los derechos reservados.
-                        </h3>
-                    </div>
-                </footer>
         </section>
+</section>
+
+<footer>
+    <div class="redes">
+        <a href="https://www.facebook.com/postmalone" target="_blank"><img src="../images/facebook.png"></a>
+        <a href="https://www.instagram.com/postmalone/" target="_blank"><img src="../images/instagram.png"></a>
+        <a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60" target="_blank"><img
+                src="../images/spotify.png"></a>
+        <a href="https://www.tiktok.com/@postmalone?lang=es" target="_blank"><img src="../images/tik-tok.png"></a>
     </div>
+
+    <div>
+        <h6>Desarollo Mati Tarrio - Argentina Julio 2022. Todos los derechos reservados.
+        </h6>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
