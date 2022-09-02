@@ -1,0 +1,16 @@
+.titles {
+    color: #b40d0d
+}
+
+span {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        color: main-color;
+    }
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,9 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap);
+body {
+  font-family: "Didact Gothic", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   grid-area: header;
+  background-color: #000000;
 }
 
 .navbar {
@@ -85,4 +92,19 @@ footer {
   .merch {
     text-align: center;
   }
+}
+.titles {
+  color: #b40d0d;
+}
+
+span {
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+span:hover {
+  color: main-color;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=estilo.css.map */
