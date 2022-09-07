@@ -58,6 +58,22 @@ footer {
   padding-top: 1%;
 }
 
+.titles {
+  color: #b40d0d;
+}
+
+span {
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+span:hover {
+  color: main-color;
+}
+
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 480px) {
   .container {
     padding: 0;
@@ -92,19 +108,4 @@ footer {
   .merch {
     text-align: center;
   }
-}
-.titles {
-  color: #b40d0d;
-}
-
-span {
-  color: #ffffff;
-  transition: all 0.5s ease-in-out;
-}
-span:hover {
-  color: main-color;
-}
-
-a {
-  text-decoration: none;
 }/*# sourceMappingURL=estilo.css.map */
