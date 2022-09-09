@@ -1,0 +1,46 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.product {
+    @include flex(column, space-around, center);
+}
+
+.talles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.talles table,
+th,
+td {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: $main-color;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.merch-title {
+    color: $main-color;
+    align-items: center
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

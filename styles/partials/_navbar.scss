@@ -23,3 +23,14 @@
         }
     }
 }
+
+$redes: (
+    facebook: #0000ff,
+    instagram: #ff00b3,
+    spotify: #008a00,
+    tiktok: #ffffff
+);
+
+.navbar-brand {
+    @extend .fa-brands,
+}

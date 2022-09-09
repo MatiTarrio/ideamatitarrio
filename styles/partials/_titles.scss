@@ -1,16 +1,23 @@
 .titles {
-    color: #b40d0d
+    color: $main-color
 }
 
 span {
-    color: #ffffff;
+    color: $secondary-color;
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        color: main-color;
+        color: $main-color;
     }
 }
 
 a {
     text-decoration: none;
+}
+
+p {
+    display: flex;
+    font-size: 1.3em;
+    color: $secondary-color;
+    margin-top: 4%;
 }
