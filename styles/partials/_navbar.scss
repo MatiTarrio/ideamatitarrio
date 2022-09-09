@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    background-color: $background-color;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            padding: 0 .5em;
+
+            a {
+                font-size: 20px;
+                color: $main-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $main-color
+                }
+            }
+        }
+    }
+}
+
+$redes: (
+    facebook: #0000ff,
+    instagram: #ff00b3,
+    spotify: #008a00,
+    tiktok: #ffffff
+);
+
+.navbar-brand {
+    @extend .fa-brands,
+}

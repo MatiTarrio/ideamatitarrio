@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: $main-color;
+    align-items: center;
+    grid-area: footer;
+    padding-top: 1%;
+}
+
+
+
+.--fa-border-padding {
+    padding: 10px;
+}
+
+.fa-brands {
+    color: $main-color;
+}
+
+$redes: (
+    facebook: #0000ff,
+    instagram: #ff00b3,
+    spotify: #008a00,
+    tiktok: #ffffff
+);
+
+
+
+@each $redsocial,
+$colordered in $redes {
+    .fa-#{$redsocial} {
+        &:hover {
+            color: $colordered
+        }
+    }
+}

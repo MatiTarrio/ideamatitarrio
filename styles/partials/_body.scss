@@ -1,0 +1,29 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: $background-color;
+    color: $secondary-color;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main tour"
+        "main merch"
+        "footer footer";
+    row-gap: 0.1em;
+    padding: 0 1.5em;
+}
+
+main {
+    grid-area: main;
+}
+
+.grid-merch {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "shop"
+        "table"
+        "footer";
+}
